@@ -110,6 +110,36 @@ vendor.audio_hal.in_period_size=144
 vendor.audio_hal.period_multiplier=2
 vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=true
+persist.vendor.audio.delta.refresh=true
+persist.vendor.audio.misound.disable=true
+ro.audio.monitorRotation=true
+ro.vendor.audio.enhance.support=false
+ro.vendor.audio.gain.support=true
+ro.vendor.audio.karaok.support=true
+ro.vendor.audio.ns.support=false
+ro.vendor.audio.sfx.audiovisual=false
+ro.vendor.audio.soundtrigger.appdefine.cnn.level=35
+ro.vendor.audio.soundtrigger.appdefine.gmm.level=55
+ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=65
+ro.vendor.audio.soundtrigger.appdefine.vop.level=10
+ro.vendor.audio.soundtrigger.lowpower=true
+ro.vendor.audio.soundtrigger.snr=16
+ro.vendor.audio.soundtrigger=sva
+ro.vendor.audio.soundtrigger.training.level=50
+ro.vendor.audio.soundtrigger.xanzn.cnn.level=80
+ro.vendor.audio.soundtrigger.xanzn.gmm.level=45
+ro.vendor.audio.soundtrigger.xanzn.gmm.user.level=30
+ro.vendor.audio.soundtrigger.xanzn.vop.level=10
+ro.vendor.audio.soundtrigger.xatx.cnn.level=45
+ro.vendor.audio.soundtrigger.xatx.gmm.level=25
+ro.vendor.audio.soundtrigger.xatx.gmm.user.level=40
+ro.vendor.audio.soundtrigger.xatx.vop.level=-10
+ro.vendor.audio.spk.clean=true
+ro.vendor.audio.spk.stereo=true
+ro.vendor.audio.us.type=mius
+ro.vendor.audio.zoom.support=true
+ro.vendor.audio.zoom.type=1
+
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
@@ -179,12 +209,11 @@ vendor.display.qdcm.disable_factory_mode=1
 vendor.display.qdcm.mode_combine=1
 vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=0
+ro.vendor.display.paneltype=2
+vendor.display.defer_fps_frame_count=2
 
 # DRM
 drm.service.enabled=true
-
-# Fingerprint
-persist.vendor.qfp=false
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
@@ -223,9 +252,6 @@ ro.hardware.keystore_desede=true
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
 
-# NFC
-ro.camera.notify_nfc=1
-
 # OTG
 persist.sys.oem.otg_support=true
 
@@ -244,6 +270,8 @@ sys.fflag.override.settings_seamless_transfer=true
 # Sensors
 persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.sync_request=true
+persist.log.tag.sensors-hal=S
+persist.log.tag."LOGTAG"=S
 
 # Shutdown
 sys.vendor.shutdown.waittime=500
@@ -266,3 +294,6 @@ wifi.aware.interface=wifi-aware0
 
 # Zygote
 zygote.critical_window.minute=10
+
+# Settings TabletUI
+persist.settings.large_screen_opt.enabled=true
